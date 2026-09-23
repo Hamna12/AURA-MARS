@@ -1,0 +1,8 @@
+# AURA Mars — Streamlit server configuration
+#
+# enableStaticServing lets app/static/* be served at /app/static/* — used
+# to serve the cinematic landing video and the real NASA spacecraft GLB
+# model. Both are too large to sensibly inline as base64 data URIs the
+# way fonts/textures/JS libraries are handled elsewhere in this project.
+[server]
+enableStaticServing = true

@@ -1,0 +1,45 @@
+{
+  "regions": [
+    {
+      "name": "Jezero Crater",
+      "lat": 18.4386,
+      "lon": 77.4508,
+      "description": "Ancient river delta and lake bed. Perseverance rover landing site. Rich in clay minerals indicating past water activity. Strong astrobiological interest.",
+      "source_quality": "peer-reviewed",
+      "tags": ["delta", "lacustrine", "clay-minerals", "astrobiology", "perseverance"]
+    },
+    {
+      "name": "Arcadia Planitia",
+      "lat": 46.7,
+      "lon": -180.0,
+      "description": "Smooth lowland plains in northern hemisphere. Candidate SpaceX Starship landing site. Subsurface water ice detected by radar. Relatively flat terrain suitable for landing.",
+      "source_quality": "peer-reviewed",
+      "tags": ["plains", "water-ice", "landing-site", "starship", "ISRU"]
+    },
+    {
+      "name": "Hellas Planitia",
+      "lat": -42.4,
+      "lon": 70.5,
+      "description": "Deepest and largest visible impact basin on Mars. Highest surface atmospheric pressure on Mars (~1155 Pa). Potential for liquid water stability due to pressure. Challenging terrain at basin edges.",
+      "source_quality": "peer-reviewed",
+      "tags": ["impact-basin", "high-pressure", "deep-terrain", "atmospheric", "water-stability"]
+    }
+  ],
+  "criteria_definitions": {
+    "water_ice_evidence": "Strength of evidence for accessible water ice (surface or shallow subsurface)",
+    "radiation_shielding": "Natural protection from cosmic/solar radiation (terrain, atmosphere, depth)",
+    "terrain_accessibility": "Ease of landing and surface traverse (flatness, rock density, slopes)",
+    "scientific_interest": "Value for scientific research (geology, astrobiology, history)",
+    "resource_availability": "Potential for in-situ resource utilisation (water, regolith, minerals)",
+    "atmospheric_conditions": "Atmospheric pressure, dust storm frequency, temperature range"
+  },
+  "default_weights": {
+    "water_ice_evidence": 0.25,
+    "radiation_shielding": 0.15,
+    "terrain_accessibility": 0.20,
+    "scientific_interest": 0.15,
+    "resource_availability": 0.15,
+    "atmospheric_conditions": 0.10
+  },
+  "_notes": "Evaluation criteria scores are no longer hardcoded here. They are dynamically calculated using ChromaDB vector search query match strength."
+}

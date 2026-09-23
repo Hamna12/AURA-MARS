@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/tmp/claude-1000/-mnt-d-AURA-MARS/4b534089-2fad-470b-b69a-f96eae771223/scratchpad/aura_check_venv/bin/python -m pytest tests/ -q)"
+    ]
+  }
+}

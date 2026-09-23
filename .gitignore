@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+
+# ChromaDB Persistence (regenerable from source PDFs)
+chroma_db/*
+!chroma_db/.gitkeep
+
+# Raw PDF data (too large for git; manually curated)
+data/raw_pdfs/*
+!data/raw_pdfs/.gitkeep
+
+# Processed intermediate data (regenerable)
+data/processed/*
+!data/processed/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
